@@ -1,9 +1,9 @@
 build:
   docker:
     web: Dockerfile
-  run:
-    web: freqtrade trade --config.json
-    dry:
-        command:
-          - freqtrade trade --config.json
-        image: web
+run:
+  web: freqtrade trade --config.json
+  dry:
+      command:
+        - freqtrade trade --config.json
+      image: web
